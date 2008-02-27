@@ -1,8 +1,15 @@
 require 'depth_charge'
 
-desc 'Check project for dependencies'
-namespace :depth_charge do
-  task :check => :ruby_env do
-    DepthCharge.run(RAILS_ROOT)
+namespace :dc do
+  desc 'Check project for dependencies'
+  task :check do
+    DepthCharge.run(File.expand_path('.'))
+  end
+
+  namespace :rails do
+    desc 'Check Rails project for dependencies'
+    task :check do
+      DepthCharge.run(RAILS_ROOT)
+    end
   end
 end
