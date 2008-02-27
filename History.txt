@@ -1,3 +1,10 @@
+== 0.0.2 2008-02-27
+
+* 3 minor enhancements:
+  * gem list --local is run to pull a list of locally-installed gems
+  * gem list --remote is run to create a list of all available gems (which is then cached)
+  * Dependencies are segmented into installed gems, uninstalled gems, and other
+
 == 0.0.1 2008-02-26
 
 * 1 major enhancement:
