@@ -1,3 +1,2 @@
-- process output to extract gems
-- check for gem installation on system
-? gem version checking
+- validate that requirements are, in fact, gems
+- gem version checking?
