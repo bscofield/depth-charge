@@ -1,5 +1,3 @@
-require 'depth_charge'
-
 namespace :dc do
   desc 'Check project for dependencies'
   task :check do
