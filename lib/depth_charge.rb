@@ -1,8 +1,8 @@
 $:.unshift File.dirname(__FILE__)
 
 module DepthCharge
-  USER_HOME = File.expand_path('~') unless defined?(:USER_HOME)
- 
+  USER_HOME = File.expand_path('~') unless const_defined?(:USER_HOME)
+
   class << self
     def gem_list(scope = 'local')
       process_gem_list(`gem list --#{scope} --no-verbose`, scope)
